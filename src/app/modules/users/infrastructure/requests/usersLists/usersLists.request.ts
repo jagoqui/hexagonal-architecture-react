@@ -8,7 +8,7 @@ import type { UserDTO } from "../../dtos/user.dto";
 
 export const fetchUsersListRequest: FetchUsersList = async (): Promise<Array<User>> => {
   const usersDTO = await api
-    .patch<Array<UserDTO>>(`${VARIABLES.REACT_APP_API}/users/all`)
+    .patch<Array<UserDTO>>(`${VARIABLES.REACT_APP_API}/users`)
     .json();
 
   const users = usersDTO.map((user) => transformUserDto(user));

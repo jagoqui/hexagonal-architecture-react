@@ -11,7 +11,7 @@ export const fetchUserUpdateRequest: FetchUserUpdate = async ({
   body, id
 }): Promise<User> => {
   const userDTO = await api
-    .patch<UserDTO>(`${VARIABLES.REACT_APP_API}/user/${id}`, {
+    .put<UserDTO>(`${VARIABLES.REACT_APP_API}/users/${id}`, {
         json: transformUserBody(body),
     })
     .json();

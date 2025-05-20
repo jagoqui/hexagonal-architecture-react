@@ -10,7 +10,7 @@ export const fetchUserDeleteRequest: FetchUserDelete = async ({
   id
 }): Promise<User> => {
   const userDTO = await api
-    .delete<UserDTO>(`${VARIABLES.REACT_APP_API}/user/${id}`)
+    .delete<UserDTO>(`${VARIABLES.REACT_APP_API}/users/${id}`)
     .json();
 
   const user = transformUserDto(userDTO);

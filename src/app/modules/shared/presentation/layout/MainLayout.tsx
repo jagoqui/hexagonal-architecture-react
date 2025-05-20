@@ -5,7 +5,6 @@ export const MainLayout = () => {
     return (
     <>
         <Outlet />
-        Hola
         <Toaster expand={true} richColors />
     </>)
 }

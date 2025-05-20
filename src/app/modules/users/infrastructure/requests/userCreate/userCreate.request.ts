@@ -10,7 +10,7 @@ export const fetchUserCreateRequest: FetchUserCreateService = async ({
   body,
 }): Promise<User> => {
   const userDTO = await api
-    .post<UserDTO>(`${VARIABLES.REACT_APP_API}/user`, {
+    .post<UserDTO>(`${VARIABLES.VITE_REACT_APP_API}/user`, {
       json: transformUserBody(body),
     })
     .json();

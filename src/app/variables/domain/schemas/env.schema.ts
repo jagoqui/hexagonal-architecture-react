@@ -1,8 +1,8 @@
 import { z } from 'zod';
 
 export const envSchema = z.object({
-  REACT_APP_API: z.string().url(),
-  REACT_APP_NODE_ENV: z
+  VITE_REACT_APP_API: z.string().url(),
+  VITE_REACT_APP_MODE: z
     .literal('development')
     .or(z.literal('production'))
     .or(z.literal('test')),

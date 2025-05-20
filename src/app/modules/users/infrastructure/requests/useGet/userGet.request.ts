@@ -10,7 +10,7 @@ export const fetchUserGetRequest: FetchUserGet = async ({
   id,
 }): Promise<User> => {
   const userDTO = await api
-    .get<UserDTO>(`${VARIABLES.REACT_APP_API}/users/${id}`)
+    .get<UserDTO>(`${VARIABLES.VITE_REACT_APP_API}/users/${id}`)
     .json();
 
   const user = transformUserDto(userDTO);

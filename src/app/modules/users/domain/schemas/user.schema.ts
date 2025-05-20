@@ -1,4 +1,4 @@
-import { z } from 'zod';
+import { z } from "zod";
 
 export const MIN_PASSWORD_LENGTH = 6;
 
@@ -15,7 +15,7 @@ export const userWithPasswordSchema = baseUserSchema.extend({
 });
 
 export const userSchema = baseUserSchema.extend({
-  id: z.string().uuid(),
+  id: z.number(),
 });
 
 export type User = z.infer<typeof userSchema>;

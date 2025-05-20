@@ -1,8 +1,8 @@
-import { useFetchUserCreate } from "../../hooks/useFetchUserCreate/useFetchUserCreate";
+import { useFetchUsersList } from "../../hooks/useFetchUsersList/useFetchUsersList";
 import { UsersLayout } from "../../layouts/Users/UsersLayout";
 
 export const Users = () => {
-	useFetchUserCreate();
+  useFetchUsersList();
 
-	return <UsersLayout />;
+  return <UsersLayout />;
 };

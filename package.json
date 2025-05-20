@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "watch:json-server": "json-server --watch data/jsons/db.json --port 3100",
+    "watch:json-server": "json-server --delay 500 --watch data/jsons/db.json --port 3100",
     "dev": "concurrently \"npm run watch:json-server\" \"vite\"",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
@@ -31,7 +31,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.1.0",
-    "json-server": "^1.0.0-beta.3",
+    "json-server": "^0.17.4",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.32.1",
     "uuid": "^11.1.0",
